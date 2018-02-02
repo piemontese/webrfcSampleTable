@@ -1,0 +1,29 @@
+.app-sidenav-container {
+  height: 100%;
+}
+
+.app-sidenav-content {
+  display: flex;
+  width: 30%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  padding: 20px;
+}
+
+.app-sidenav {
+  font-size: 25px;
+  padding: 10px;
+  min-width: 100px;
+  width: 20%;
+  display: block;
+  height: 500px;
+  min-height: 300px;
+}
+
+mat-sidenav-content {
+  background-color: white;
+}
