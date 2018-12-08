@@ -21,6 +21,7 @@ import { DataTableComponent } from './components/commons/data-table/data-table.c
 
 import { UserService } from './services/user.service';
 
+import { PmtDataTableModule } from 'pmt-data-table';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { UserService } from './services/user.service';
     MatIconModule,
     MatButtonModule,
     MatSidenavModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    PmtDataTableModule
   ],
   providers: [
     UserService,

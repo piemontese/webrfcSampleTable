@@ -20,6 +20,25 @@
     </mat-button-toggle-group>
   </mat-sidenav>
   <mat-sidenav-content>
+      <div fxLayout="column" fxLayout.xs="column" fxLayoutAlign="center center">
+				<lib-pmt-data-table style="width: 95%; min-width: 600px;" 
+								color="accent"
+								title="User list" 
+								method="TH_USER_LIST"
+								methodType = "F"
+								webrfcLog = "true"
+								webrfcLogin = "true"
+								webrfcUser = "user1"
+								webrfcPassword = "Ostrakon1!"
+								noRefreshColumns = "true"
+								table="USRLIST"
+								[fields]="[ { name: 'sap-language', value:'EN', type: 'select', placeholder: 'Language' }	]"
+								[buttons]="[ { caption:'View', icon: 'search', position: 'left', action: 'view', color: 'prymary', row: 1, tooltip: 'View item', disabled: true, multiSel: false },
+											 { caption:'Change', icon: 'edit', position: 'left', action: 'change', color: 'prymary', row: 1, tooltip: 'Change item', disabled: true, multiSel: false } ]"
+								[iconButtons]="[ { icon: 'refresh', position: 'right', action: 'refresh', color: 'prymary', row: 0, tooltip: 'Refresh data', disabled: false, multiSel: null } ]"
+								[displayedColumns]="['tid', 'mandt', 'bname', 'term', 'hostaddr', 'guiversion', 'zeit']" 
+								[displayedColumnsNames]="['TID', 'Client', 'User', 'Terminal', 'IP address', 'GUI version', 'Time']"> </lib-pmt-data-table>
+      </div>
 		<app-data-table [title]="sidenavButtons[selectedItem]"></app-data-table>
 	</mat-sidenav-content>
 </mat-sidenav-container>
