@@ -12,7 +12,6 @@ export class AppComponent {
   selectedItem = null;
 
   buttonClick( index: number ) {
-    debugger;
 //    this.btnToggled = !this.btnToggled;
     this.selectedItem = index;
   }
